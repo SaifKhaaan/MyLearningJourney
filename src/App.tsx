@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Timer from './Timer';
+import styled from "styled-components";
+
+const StyledFont = styled.div`
+display: flex;
+background-image: url(image-3.jpg);
+z-index: 202;
+background-color: #f6f3f3;`
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <StyledFont>
+    
+     <Timer />
+     </StyledFont>
     </div>
   );
 }
